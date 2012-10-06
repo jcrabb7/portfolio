@@ -1,0 +1,125 @@
+/* TEXT */
+h1{
+font-family:'Dosis', sans-serif;
+font-weight:300; /*book*/
+color:#333333;
+font-size:72px;
+margin-bottom: 0;
+margin-top: 0;
+}
+
+h2{
+font-family:'Dosis', sans-serif;
+font-weight:400; /*medium*/
+color:#333333;
+font-size:36px;
+margin-bottom: 0;
+margin-top: 0;
+}
+
+h3{
+font-family:'Dosis', sans-serif;
+font-weight:300; /*book*/
+color:#333333;
+font-size:24px;
+margin: 0;
+text-align:left;
+}
+
+.bubbleindent{
+text-align:left;
+text-indent:90px;
+}
+
+h3.navigation {
+text-align:center;
+}
+
+p{
+font-family:'Dosis', sans-serif;
+font-weight:300; /*book*/
+color:#333333;
+font-size:24px;
+margin-bottom: 0;
+margin-top: 0;
+}
+
+/* DISPLAY */
+
+
+ul{
+list-style-type:none;
+margin:10;
+padding:0;
+overflow:hidden;
+border:solid;
+border-width:thin;
+}
+li{
+float:left;
+}
+
+/* LINKS */
+
+a:link, a:visited {
+display:block;
+width:140px;
+color:#333333;
+background-color:#FFFFFF;
+text-align:center;
+padding:4px;
+margin: 0px;
+text-decoration:none;}    /* unvisited link */
+
+a:hover, a:active {
+background-color:#FF7BAC;
+color:#FFFFFF; 
+text-decoration:none;}   /* mouse over link */
+
+a.download{
+
+}
+
+body {
+display: block;
+margin-top: 10px;
+margin-right: 0px;
+margin-bottom: 10px;
+margin-left: 200px;
+}
+
+body ul{
+margin-left:47px;
+margin-right:291px;
+}
+
+
+
+
+.bubble {
+position: relative;
+background-color:#eee;
+margin: 0;
+padding:20px;
+text-align:center;
+width:800px;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+-webkit-box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+}
+ 
+.bubble:after {
+position: absolute;
+display: block;
+content: "";
+border-color: #eee transparent transparent transparent;
+border-style: solid;
+border-width: 10px;
+height:0;
+width:0;
+position:absolute;
+bottom:-19px;
+left:1em;
+}
