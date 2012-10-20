@@ -13,16 +13,36 @@ time, mark, audio, video {
     margin:0;
     padding:0;
     border:0;
+    letter-spacing: 2px;
 }
 
 body {
-  font-family:'Dosis', sans-serif;
-  background-color :#666;
+  font-family: 'Dosis', sans-serif;
+  background-color: #db6;
 }
 
-div#page {
+div.top {
+  background-color: #888;
+}
+
+div.page {
   width: 960px;
   margin: 0 auto;
+}
+
+div#header{
+  height: 60px;
+  width: 100%;
+  color: white;
+  padding: 20px 0px;
+}
+
+div#flavor {
+  float: right;
+  font-size: 24px;
+  font-weight: 200;
+  height: 100%;
+  line-height: 60px;
 }
 
 /* TEXT */
@@ -50,43 +70,43 @@ p {
   font-size:24px;
 }
 
-ul {
-  list-style-type: none;
-}
-
 /* NAVIGATION */
 
 nav {
   width: 100%;
   background-color: #333;
   display: block;
-}
-
-nav a {
-  text-align:center;
-  font-size: 24px;
+  height: 90px;
 }
 
 nav ul {
-  height: 38px;
+  margin: 0px auto;
+  width: 960px;
+  list-style-type: none;
 }
 
 nav li {
   float: left;
 }
 
-nav a:link, nav a:visited {
+nav a {
   display:block;
-  width:140px;
-  color:#FFFFFF;
-  text-align:center;
-  padding:4px;
   text-decoration:none;
+  text-align:center;
+  color:#FFFFFF;
+  padding: 0px 45px;
+  background-color:#333;
+  line-height: 90px;
+  text-align:center;
+  font-size: 24px;
 } /* unvisited link */
 
 nav a:hover, nav a:active {
-  background-color:#666;
-  text-decoration:none;
+  background-color:#888;
+}   /* mouse over link */
+
+nav a.portfolio:hover, nav a.portfolio:active {
+  background-color: #db6;
 }   /* mouse over link */
 
 a.download{
@@ -94,29 +114,25 @@ a.download{
 }
 
 
-.bubble {
-  position: relative;
+#bubble {
   background-color:#eee;
-  margin: 0;
+  margin: 0px;
+  height: 300px;
+  overflow: auto;
   padding:20px;
-  text-align:center;
-  width:800px;
-  border-radius:10px;
+  border-radius:15px;
   box-shadow: 0px 0 3px rgba(0,0,0,0.25);
 }
- 
-.bubble:after {
+
+#arrow {
   display: block;
   content: "";
   border-color: #eee transparent transparent transparent;
   border-style: solid;
-  border-width: 15px;
-  bottom:-29px;
   height: 0px;
   width: 0px;
-  position: absolute;
-  left:2em;
-}
-.bubble * {
-  text-indent:90px;
+  border-width: 35px;
+  margin-bottom: -25px;
+  position: relative;
+  left: 40px;
 }
