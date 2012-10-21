@@ -9,9 +9,11 @@ try out fixed positioning
 <html>
   <head>
     <meta charset="UTF-8" />
+    <title>Jamie Crabb Portfolio</title>
     <link href='http://fonts.googleapis.com/css?family=Dosis:200' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Jamie Crabb Portfolio</title>
+    <script src="jquery-1.8.2.min.js"></script>
+    <script src="script.js"></script>
   </head>
  
   <body>
@@ -23,7 +25,15 @@ try out fixed positioning
           </div>
         </div>
         <div id="bubble">
-          Hello World!
+          <div id="home-content">
+          Home
+          </div>
+          <div id="resume-content">
+          Resume
+          </div>
+          <div id="contact-content">
+          Contact
+          </div>
         </div>
         <div id="arrow">
         </div>
@@ -31,14 +41,20 @@ try out fixed positioning
     </div>
     <nav>
       <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">RESUME</a></li>
-        <li><a class="portfolio" href="#">PORTFOLIO</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a class="bubble-button" target="home-content" href="#">HOME</a></li>
+        <li><a class="bubble-button" target="resume-content" href="#">RESUME</a></li>
+        <li><a id="portfolio-nav" href="#">PORTFOLIO</a></li>
+        <li id="contact"><a class="bubble-button" target="contact-content" href="#">CONTACT</a></li>
       </ul>
     </nav>
+    <div id="minibar">
+      <div id="progress">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#" class="last"></a>
+      </div>
+    </div>
     <div id="portfolio">
-    <br /><br /><br /><br />
     </div>
   </body>
 </html>
