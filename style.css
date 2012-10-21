@@ -121,6 +121,7 @@ nav a:hover, nav a:active {
   border-radius: 14px;
   background-color: #333;
   padding: 4px;
+  height: 21px;
   max-width: 960px;
   display: inline-block;
   display: none;
